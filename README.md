@@ -8,7 +8,7 @@ Aplikasi yang diperuntukan untuk mahasiswa yang ingin mengambil matakuliah.
 
 ## Disclaimer
 
-Aplikasi ini dibuat untuk memenuhi tugas akhir(UAS) matakuliah web programming saya berdasarkan [soal](SOAL_UAS.pdf) yang diberikan, jadi tidak seperti real use case pengambilan krs pada aplikasi kampus😁
+Aplikasi ini dibuat untuk memenuhi tugas akhir(UAS) matakuliah web programming saya berdasarkan [soal](docs/SOAL_UAS.pdf) yang diberikan, jadi tidak seperti real use case pengambilan krs pada aplikasi kampus😁
 
 ## Documentation
 
