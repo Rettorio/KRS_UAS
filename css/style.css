@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    margin: 50px;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('img/bg.jpg');
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll; */
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(60, 11, 105);
+    /* border: 1px solid black;
+    border-radius: 4px; */
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.head{
+    background-color: orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.head h1{
+    color: white;
+}
+
+h1.judul{
+    color: orange;
+}
+
+.menu{
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.menu a{
+    color: white;
+    margin-right: 30px;
+}
+
+.menu a:hover{
+    color: orange;
+    font-weight: bold;
+}
+
+.content{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+p{
+    font-size: 20px;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+}
+
+#kanan{
+    text-align: right;
+}
+
+.merah{
+    color: red;
+}
+
+img{
+    width: 250px;
+}
+
+p img{
+    width: 250px;
+    float: left;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+table{
+    font-size: 20px;
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+td{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+}
+
+label{
+    font-size: 20px;
+    display: block;
+}
+
+input, textarea, select{
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+    background-color: aliceblue;
+}
+
+button{
+    border: none;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 3px;
+}
+
+button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.hijau{
+    background-color: rgb(1, 172, 1);
+    color: white;
+}
+
+button.hijau:hover{
+    background-color: rgb(4, 130, 4);
+}
+
+button.kuning{
+    background-color: orange;
+    color: white;
+}
+
+button.kuning:hover{
+    background-color: rgb(223, 147, 5);
+}

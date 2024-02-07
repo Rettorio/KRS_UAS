@@ -1,0 +1,46 @@
+<?php
+session_start();
+require_once 'config/koneksi.php';
+
+$nim = htmlspecialchars($_POST['nim']);
+$password = htmlspecialchars($_POST['password']);
+
+if (empty($nim) || empty($password)) {
+    echo "<script>
+            alert('data kosong');
+            window.location.href = 'login.php';
+        </script>";
+} else {
+    # cek
+    $cek = $con->prepare("SELECT * FROM user WHERE nim = :nim");
+    $cek->bindParam('nim', $nim);
+    $cek->execute();
+    $jml = $cek->rowCount();
+    if ($jml != 0) {
+        # nim ada
+        $data = $cek->fetch();
+        # cek password
+        if (password_verify($password, $data['password'])) {
+            # password benar, buat session
+            $auth = ["nim" => $nim, "nama" => $data['na']];
+            $_SESSION['web2ti3d_user'] = $data['nim'];
+            $_SESSION['web2ti3d_level'] = $data['level'];
+            echo "<script>
+                alert('berhasil.');
+                window.location.href = 'index.php';
+            </script>";
+        } else {
+            # password salah
+            echo "<script>
+                alert('username/password salah.');
+                window.location.href = 'login.php';
+            </script>";
+        }
+    } else {
+        # username tidak ada
+        echo "<script>
+            alert('username tidak ada.');
+            window.location.href = 'login.php';
+        </script>";
+    }
+}
